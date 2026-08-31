@@ -5,7 +5,7 @@ public:
 
         int max_pro = nums[0],min_pro = nums[0],n = nums.size(),ans = nums[0];
 
-        for(size_t i = 1;i < n;i++){
+        for(size_t i = 1;i < n;i++){//Maine size_t isiliye likha kyunki C++ mein nums.size() ek unsigned data type return karta hai (jo kabhi negative nahi ho sakta), jise size_t kehte hain
             // agar elment negative hai toh
             if(nums[i] < 0){
                 swap(max_pro, min_pro);
