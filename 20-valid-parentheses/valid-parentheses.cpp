@@ -3,7 +3,10 @@ public:
     bool isValid(string s) {
         // by the help of stack 
         stack<char> st;
-        for(char c : s){
+        // dono loop ke sath
+        for(int i = 0;i < s.length(); i++){
+            char c = s[i];
+        // for(char c : s){
             // cahr agra open bracket hai toh store karo stack mai 
             if(c == '(' || c == '{' || c == '['){
                 st.push(c);
