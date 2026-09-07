@@ -9,9 +9,9 @@ public:
         vector<int> freq(128,0);
         
         // pass 1
-        for(int i = 0;i < s.length();i++){
-            char c = s[i];
-        // for(char c : s){
+        // for(int i = 0;i < s.length();i++){
+            // char c = s[i];
+        for(char c : s){
             freq[c]++;
         }
 
