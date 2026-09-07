@@ -3,7 +3,7 @@ public:
     int longestPalindrome(string s) {
         //  // by vector freq method 
         // vector<int> freq(128, 0);
-        // // for(i = 0;i < s.length();i++){
+        // // for(int i = 0;i < s.length();i++){
         //     // char c = s[i];
         // for(char c : s){
         //     freq[c]++;
@@ -25,9 +25,9 @@ public:
 
         //hashmap ke sath
         std::unordered_map<char,int> freq;
-        // for(i = 0;i < s.length();i++){
-            // char c = s[i];
-        for(char c : s){
+        for(int i = 0;i < s.length();i++){
+            char c = s[i];
+        // for(char c : s){
             freq[c]++;
         }
         int length = 0;
