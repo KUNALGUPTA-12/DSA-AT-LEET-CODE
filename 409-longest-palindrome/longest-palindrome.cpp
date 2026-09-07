@@ -32,8 +32,11 @@ public:
         }
         int length = 0;
         bool has_odd = false;
-        for(int i = 0;i < 128;i++){
-            int count = freq[i];
+        // naya method for ke freq ka 
+        for (auto it = freq.begin(); it != freq.end(); it++) {
+            int count = it->second; 
+        // for(int i = 0;i < 128;i++){
+        //     int count = freq[i];
             length += (count / 2) * 2 ;//integer dision trick
 
             if(count % 2 != 0){
