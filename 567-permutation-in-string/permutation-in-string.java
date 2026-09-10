@@ -58,4 +58,4 @@ class Solution {
         }
         return false;
     }
-}
+};
